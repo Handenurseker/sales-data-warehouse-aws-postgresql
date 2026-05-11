@@ -6,6 +6,8 @@ The main goal of this project is to transform raw sales and product data into a 
 The project follows a layered data warehouse architecture with public, staging, and core schemas.
 Raw data is first stored in the public schema, transformed in the staging schema, and loaded into the core schema for analytical processing.
 The final structure includes dimension tables and a fact table for sales analysis.
+Product data is loaded using a full refresh strategy because it is relatively small and less frequently updated.
+Sales data is loaded using an incremental load strategy based on the LastLoadDate variable to avoid reprocessing historical transaction records.
 
 ## Business Objective
 The objective of this project is to build a scalable data warehouse for analyzing sales performance, product performance, payment behavior, and time-based sales trends.
