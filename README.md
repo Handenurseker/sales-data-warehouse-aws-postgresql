@@ -65,3 +65,17 @@ Fact Table:
 - core.sales
 
 The fact table stores transactional sales data and references dimension tables using foreign keys.
+
+## ETL Workflow Screenshots
+
+### Complete ETL Workflow
+![Complete ETL Workflow](screenshots/01_complete_etl_process.PNG)
+
+### Staging Workflow
+![Staging Workflow](screenshots/02_staging_workflow.PNG)
+
+### Core Workflow
+![Core Workflow](screenshots/03_core_workflow.PNG)
+
+### Fact Sales Pipeline
+![Fact Sales Pipeline](screenshots/fact_sales_pipeline.PNG)
