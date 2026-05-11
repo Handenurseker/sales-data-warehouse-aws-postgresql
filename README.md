@@ -1,16 +1,17 @@
 # Sales Data Warehouse with AWS, PostgreSQL and Apache Hop
 
 ## Project Overview
-This project is an end-to-end sales data warehouse project built using AWS, PostgreSQL, DBeaver, and Apache Hop.
-The main goal of this project is to transform raw sales and product data into a structured data warehouse model for analysis and reporting.
-The project follows a layered data warehouse architecture with public, staging, and core schemas.
-Raw data is first stored in the public schema, transformed in the staging schema, and loaded into the core schema for analytical processing.
-The final structure includes dimension tables and a fact table for sales analysis.
-Product data is loaded using a full refresh strategy because it is relatively small and less frequently updated.
-Sales data is loaded using an incremental load strategy based on the LastLoadDate variable to avoid reprocessing historical transaction records.
+This project demonstrates an end-to-end Data Warehouse architecture built using Apache Hop, PostgreSQL, and AWS.
 
-## Business Objective
-The objective of this project is to build a scalable data warehouse for analyzing sales performance, product performance, payment behavior, and time-based sales trends.
+The project includes:
+- ETL orchestration using Apache Hop workflows
+- Full refresh loading strategy for product and sales data
+- Incremental (delta) loading strategy for sales transaction data
+- Staging and core warehouse layers
+- Fact and dimension table modeling
+- Data transformation and calculation processes
+
+The PostgreSQL warehouse environment was hosted on AWS and connected to Apache Hop pipelines for ETL processing
 
 ## Tools & Technologies
 - AWS
