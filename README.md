@@ -78,4 +78,4 @@ The fact table stores transactional sales data and references dimension tables u
 ![Core Workflow](screenshots/03_core_workflow.PNG)
 
 ### Fact Sales Pipeline
-![Fact Sales Pipeline](screenshots/fact_sales_pipeline.PNG)
+![Fact Sales Pipeline](screenshots/fact_sales_preview.PNG)
